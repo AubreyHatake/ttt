@@ -1,0 +1,223 @@
+/* #B3541E */
+
+.nameForm {
+    padding: 20px;
+    margin: 5px;
+    background-color: #FFCCD2;
+    width: 22%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.nameForm input {
+    width: 64%;
+    padding: 5px;
+    font-family: 'Comfortaa';
+}
+
+
+label {
+    display: block;
+    font-family: 'Comfortaa';
+    font-size: large;
+    font-weight: bolder;
+    color: #362222;
+    padding: 5px;
+}
+
+h1 {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    color: #362222;
+}
+
+.headDiv {
+    background-color: #FFCCD2;
+    width: 26%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+.ticTac {
+    background-color: #FFEDED;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square1 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square2 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-left: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square3 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square4 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-top: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square5 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-bottom: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square6 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square7 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-right: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .square8 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    background-color:#FFCCD2;
+    border-style: solid;
+    border-bottom: none;
+    border-right: none;
+    border-color: #362222;
+    border-width: 10px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .squareColumn { 
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    padding: 2px;
+}
+
+.squareColumn1 {
+    position: absolute;
+    left: 46%;
+    top: 30%;
+    padding: 2px;
+}
+
+.squareColumn2 {
+    position: absolute;
+    left: 56%;
+    top: 30%;
+    padding: 2px;
+}
+
+.playAgain {
+    width: 20%;
+    height: 40%;
+    padding: 5px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: 'Comfortaa';
+    font-size: large;
+    font-weight: bolder;
+    background-color: #B3541E;
+    color: #FFCCD2;
+}
+
+.submitBtn {
+    margin-top: 5px;
+    color:#FFCCD2;
+    background-color: #B3541E;
+    border-radius: 5px;
+}

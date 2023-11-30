@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body class="ticTac" >
+<center>
+ <div class="headDiv">
+<h1 id="game-message">Tic Tac Toe</h1>
+ </div>
+</center>
+    <section class="nameForm">
+<form action="javascript:void(0);">
+    <label for="yourName"> Name: </label>
+    <input  type="text" name="yourName" placeholder="Name" id="yourName">
+    <label for="opponentName"> Opponent's Name: </label>
+    <input  type="text" name="opponentName" placeholder="Opponent's name" id="opponentName">
+    <input class="submitBtn" type="submit" placeholder="Submit" value="submit" onclick="playGame();"> 
+    <input class="submitBtn" type="reset" placeholder="Reset">
+</form>
+</section>
+<div>
+    <button class="playAgain">Play Again</button>
+</div>    
+<section class="ticTacContainer">
+    <div class="squareColumn">
+    <div onclick="playGame(this);" class="square1"></div>
+    <div onclick="playGame(this);" class="square2"></div>
+    <div onclick="playGame(this);" class="square3"></div>
+    </div>
+    <div class="squareColumn1">
+    <div onclick="playGame(this);" class="square4"></div>
+    <div onclick="playGame(this);" class="square"></div>
+    <div onclick="playGame(this);" class="square5"></div>
+    </div>
+    <div class="squareColumn2">
+    <div onclick="playGame(this);" class="square6"></div>
+    <div onclick="playGame(this);" class="square7"></div>
+    <div onclick="playGame(this);" class="square8"></div>
+    </div>
+</section>
+</body>
+<script src="/js/script.js"></script>
+</html>
