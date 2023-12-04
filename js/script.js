@@ -84,20 +84,26 @@ function startGame()
                  var player1Scorewin = 0;
                  var player2Scorewin = 0;
                  var player1Scoretie = 0;
-                if (turns == 1, isWin())
+                 var player2Scoretie = 0;
+                if (turns == 0, isWin())
                         {
                             player1Scorewin++;
                             document.getElementById("playeroneWin").innerHTML = player1Scorewin;
                         }
-                        else if (turns == 1, gameOver)
+                        else 
                         {
                             player1Scoretie++;
                             document.getElementById("playeroneTie").innerHTML = player1Scoretie;
                         }
-                        else
+                if (turns = 1, isWin())
                         {
                             player2Scorewin++;
                             document.getElementById("playertwoWin").innerHTML = player2Scorewin;
+                        }
+                        else
+                        {
+                            player2Scoretie++;
+                            document.getElementById("playertwoWin").innerHTML = player2Scoretie;
                         }
             }
             countScore();
