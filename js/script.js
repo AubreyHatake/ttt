@@ -11,26 +11,26 @@ let tieSound = new Audio('./audio/Tie.mp3');
 
 
 
-function startGame()
-{
-        var counter = 1;
-        var board = document.getElementById("game-board");
-        var innerDivs = "";
-        for (i = 1; i <=3; i++)
-        {
-                innerDivs += '<div id="square-' + i +'">';
+// function startGame()
+// {
+//         var counter = 1;
+//         var board = document.getElementById("game-board");
+//         var innerDivs = "";
+//         for (i = 1; i <=3; i++)
+//         {
+//                 innerDivs += '<div id="square-' + i +'">';
         
-                for (j = 1; j <=3; j++)
-                {
-                        innerDivs += '<div onclick="playGame(this,' + counter + ');"></div>';
-                        counter *=2;
-                    }
-                    innerDivs += '</div>';
-                }
-                board.innerText = innerDivs;
+//                 for (j = 1; j <=3; j++)
+//                 {
+//                         innerDivs += '<div onclick="playGame(this,' + counter + ');"></div>';
+//                         counter *=2;
+//                     }
+//                     innerDivs += '</div>';
+//                 }
+//                 board.innerText = innerDivs;
             
             
-            }
+            // }
             
             
             function playGame(clickedDiv, divValue) 
