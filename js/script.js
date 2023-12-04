@@ -65,7 +65,7 @@ let tieSound = new Audio('./audio/Tie.mp3');
                         // displays whose turn it is 
                         document.getElementById("game-message").innerHTML = players[turns] + "'s turn";
                         // if the game is over, display play again button
-                        if (!gameOver)
+                        if (gameOver!=true)
                         {
                             // play again button used to display the play again button
                             var playAgain = document.getElementById("playAgain");
