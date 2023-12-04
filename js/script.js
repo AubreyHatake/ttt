@@ -43,17 +43,17 @@ let tieSound = new Audio('./audio/Tie.mp3');
                 document.getElementById("playerTwo").innerText = players[1];
                 // if the game is not over, this code helps display win and losing messages
                 if (!gameOver) {
-                    clickedDiv.innerText = markers[turns];
+                    clickedDiv.innerHTML = markers[turns];
                     totals[turns] += divValue;
                     // isWin is a function being called to check for a winner 
                     if (isWin())
                     {
-                        document.getElementById("game-message").innerText = players[turns] + " Wins!";
+                        document.getElementById("game-message").innerHTML = players[turns] + " Wins!";
                         winSound.play(); 
                     }
                     else if (gameOver)
                     {
-                        document.getElementById("game-message").innerText = players[turns] + " Evil Prevails!!";
+                        document.getElementById("game-message").innerHTML = players[turns] + " Evil Prevails!!";
                         tieSound.play();
                     }
                     else
@@ -63,7 +63,7 @@ let tieSound = new Audio('./audio/Tie.mp3');
                         // prevent player clicking on same div again 
                         clickedDiv.attributes[0].nodeValue = "";
                         // displays whose turn it is 
-                        document.getElementById("game-message").innerText = players[turns] + "'s turn";
+                        document.getElementById("game-message").innerHTML = players[turns] + "'s turn";
                         // if the game is over, display play again button
                         if (gameOver!=true)
                         {
@@ -87,17 +87,17 @@ let tieSound = new Audio('./audio/Tie.mp3');
                 if (turns == 1, isWin())
                         {
                             player1Scorewin++;
-                            document.getElementById("playeroneWin").innerText = player1Scorewin;
+                            document.getElementById("playeroneWin").innerHTML = player1Scorewin;
                         }
                         else if (turns == 1, gameOver)
                         {
                             player1Scoretie++;
-                            document.getElementById("playeroneTie").innerText = player1Scoretie;
+                            document.getElementById("playeroneTie").innerHTML = player1Scoretie;
                         }
                         else
                         {
                             player2Scorewin++;
-                            document.getElementById("playertwoWin").innerText = player2Scorewin;
+                            document.getElementById("playertwoWin").innerHTML = player2Scorewin;
                         }
             }
             
