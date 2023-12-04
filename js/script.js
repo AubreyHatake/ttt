@@ -78,7 +78,7 @@ function startGame()
                 }
             }
             
-            function countScore(turns, gameOver)
+            function countScore()
             {
                  // win and tie variables
                  var player1Scorewin = 0;
