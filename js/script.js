@@ -97,7 +97,6 @@ function startGame()
                 }
             }
             
-            playGame();
             
             // win code
             function isWin()
