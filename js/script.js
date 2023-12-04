@@ -1,5 +1,5 @@
 // Variables
-var markers = ["( :", ": ("]
+var markers = ["( :", ": ("];
 var turns = 0;
 var players = [];
 var totals = [0,0];
