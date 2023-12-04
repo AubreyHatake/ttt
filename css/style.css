@@ -213,6 +213,7 @@ h1 {
     font-weight: bolder;
     background-color: #B3541E;
     color: #FFCCD2;
+    opacity: 0;
 }
 
 .submitBtn {
@@ -220,4 +221,32 @@ h1 {
     color:#FFCCD2;
     background-color: #B3541E;
     border-radius: 5px;
+}
+
+.scoreBoard {
+  position: relative;
+  float: right;
+  right: 50px;
+  border-style: solid;
+  border-color: #B3541E;
+  border-width: 10px;
+  height: 200px;
+  width: 300px;
+  opacity: 0;
+}
+
+.playerScores {
+  font-family: 'Comfortaa';
+  margin: 5px;
+  padding: 10px;
+}
+
+.playerNames {
+  font-family: 'Comfortaa';
+ 
+}
+
+td {
+  margin: 10px;
+  padding: 20px;
 }

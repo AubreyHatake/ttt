@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<body class="ticTac" >
+<body onload="playGame();" class="ticTac" >
 <center>
  <div class="headDiv">
 <h1 id="game-message">Tic Tac Toe</h1>
@@ -24,25 +24,41 @@
 </form>
 </section>
 <div>
-    <button class="playAgain">Play Again</button>
+    <button onclick="startGame();" class="playAgain" id="playAgain">Play Again</button>
 </div>    
-<section class="ticTacContainer">
-    <div class="squareColumn">
-    <div onclick="playGame(this);" class="square1"></div>
-    <div onclick="playGame(this);" class="square2"></div>
-    <div onclick="playGame(this);" class="square3"></div>
+<section id="game-board" class="ticTacContainer">
+    <div class="squareColumn" id="square-1">
+    <div onclick="playGame(this, 1);" class="square1"></div>
+    <div onclick="playGame(this, 2);" class="square2"></div>
+    <div onclick="playGame(this, 4);" class="square3"></div>
     </div>
-    <div class="squareColumn1">
-    <div onclick="playGame(this);" class="square4"></div>
-    <div onclick="playGame(this);" class="square"></div>
-    <div onclick="playGame(this);" class="square5"></div>
+    <div class="squareColumn1" id="square-2">
+    <div onclick="playGame(this, 8);" class="square4"></div>
+    <div onclick="playGame(this, 16);" class="square"></div>
+    <div onclick="playGame(this, 32);" class="square5"></div>
     </div>
-    <div class="squareColumn2">
-    <div onclick="playGame(this);" class="square6"></div>
-    <div onclick="playGame(this);" class="square7"></div>
-    <div onclick="playGame(this);" class="square8"></div>
+    <div class="squareColumn2" id="square-3">
+    <div onclick="playGame(this, 64);" class="square6"></div>
+    <div onclick="playGame(this, 128);" class="square7"></div>
+    <div onclick="playGame(this, 256);" class="square8"></div>
     </div>
 </section>
-</body>
+<table class="scoreBoard" id="scoreBoardd">
+    <tr>
+    <th class="playerNames" id="playerOne"> Player1 </th>
+    <th class="playerNames" id="playerTwo"> Player2</th>
+    </tr>
+    <tr>
+    <td class="playerScores"> Wins</td>
+    <td id="playoneWin"></td>
+    <td id="playertwoWin"></td>
+    </tr>
+    <tr>
+    <td class="playerScores"> Ties</td>
+    <td id="playeroneTie"></td>
+    <td id="playertwoTie"></td>
+    </tr>
+</table>
 <script src="/js/script.js"></script>
+</body>
 </html>
