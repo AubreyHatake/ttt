@@ -35,10 +35,6 @@ function startGame()
             
             function playGame(clickedDiv, divValue) 
             {
-                // win and tie variables
-                var player1Scorewin = 0;
-                var player2Scorewin = 0;
-                var player1Scoretie = 0;
                 // get the value of the user's input
                 players[0] = document.getElementById("yourName").value;
                 players[1] = document.getElementById("opponentName").value;   
@@ -68,21 +64,6 @@ function startGame()
                         clickedDiv.attributes[0].nodeValue = "";
                         // displays whose turn it is 
                         document.getElementById("game-message").innerText = players[turns] + "'s turn";
-                        if (turns == 1, isWin())
-                        {
-                            player1Scorewin++;
-                            document.getElementById("playeroneWin").innerText = player1Scorewin;
-                        }
-                        else if (turns == 1, gameOver)
-                        {
-                            player1Scoretie++;
-                            document.getElementById("playeroneTie").innerText = player1Scoretie;
-                        }
-                        else
-                        {
-                            player2Scorewin++;
-                            document.getElementById("playertwoWin").innerText = player2Scorewin;
-                        }
                         // if the game is over, display play again button
                         if (gameOver!=true)
                         {
@@ -97,6 +78,28 @@ function startGame()
                 }
             }
             
+            function countScore(turns, gameOver)
+            {
+                 // win and tie variables
+                 var player1Scorewin = 0;
+                 var player2Scorewin = 0;
+                 var player1Scoretie = 0;
+                if (turns == 1, isWin())
+                        {
+                            player1Scorewin++;
+                            document.getElementById("playeroneWin").innerText = player1Scorewin;
+                        }
+                        else if (turns == 1, gameOver)
+                        {
+                            player1Scoretie++;
+                            document.getElementById("playeroneTie").innerText = player1Scoretie;
+                        }
+                        else
+                        {
+                            player2Scorewin++;
+                            document.getElementById("playertwoWin").innerText = player2Scorewin;
+                        }
+            }
             
             // win code
             function isWin()
