@@ -11,26 +11,26 @@ let tieSound = new Audio('./audio/Tie.mp3');
 
 
 
-function startGame()
-{
-        var counter = 1;
-        var board = document.getElementById("game-board");
-        var innerDivs = "";
-        for (i = 1; i <=3; i++)
-        {
-                innerDivs += '<div id="square-' + i +'">';
+// function startGame()
+// {
+//         var counter = 1;
+//         var board = document.getElementById("game-board");
+//         var innerDivs = "";
+//         for (i = 1; i <=3; i++)
+//         {
+//                 innerDivs += '<div id="square-' + i +'">';
         
-                for (j = 1; j <=3; j++)
-                {
-                        innerDivs += '<div onclick="playGame(this,' + counter + ');"></div>';
-                        counter *=2;
-                    }
-                    innerDivs += '</div>';
-                }
-                board.innerText = innerDivs;
+//                 for (j = 1; j <=3; j++)
+//                 {
+//                         innerDivs += '<div onclick="playGame(this,' + counter + ');"></div>';
+//                         counter *=2;
+//                     }
+//                     innerDivs += '</div>';
+//                 }
+//                 board.innerText = innerDivs;
             
             
-            }
+//             }
             
             
             function playGame(clickedDiv, divValue) 
@@ -39,8 +39,8 @@ function startGame()
                 players[0] = document.getElementById("yourName").value;
                 players[1] = document.getElementById("opponentName").value;   
                 // display user names on the score board
-                document.getElementById("playerOne").innerText = players[0];
-                document.getElementById("playerTwo").innerText = players[1];
+                // document.getElementById("playerOne").innerText = players[0];
+                // document.getElementById("playerTwo").innerText = players[1];
                 // if the game is not over, this code helps display win and losing messages
                 if (!gameOver) {
                     clickedDiv.innerHTML = markers[turns];
@@ -64,49 +64,49 @@ function startGame()
                         clickedDiv.attributes[0].nodeValue = "";
                         // displays whose turn it is 
                         document.getElementById("game-message").innerHTML = players[turns] + "'s turn";
-                        // if the game is over, display play again button
-                        if (gameOver!=true)
-                        {
-                            // play again button used to display the play again button
-                            var playAgain = document.getElementById("playAgain");
-                            playAgain.style.opacity = 1.7; 
-                            // score board variable used to display score board
-                            var scoreBoardd = document.getElementById("scoreBoardd");
-                            scoreBoardd.style.opacity = 1.7;
-                        }
+                        // // if the game is over, display play again button
+                        // if (gameOver!=true)
+                        // {
+                        //     // play again button used to display the play again button
+                        //     var playAgain = document.getElementById("playAgain");
+                        //     playAgain.style.opacity = 1.7; 
+                        //     // score board variable used to display score board
+                        //     var scoreBoardd = document.getElementById("scoreBoardd");
+                        //     scoreBoardd.style.opacity = 1.7;
+                        // }
                     }
                 }
             }
             
-            function countScore()
-            {
-                 // win and tie variables
-                 var player1Scorewin = 0;
-                 var player2Scorewin = 0;
-                 var player1Scoretie = 0;
-                 var player2Scoretie = 0;
-                if (turns == 0, isWin())
-                        {
-                            player1Scorewin++;
-                            document.getElementById("playeroneWin").innerHTML = player1Scorewin;
-                        }
-                        else 
-                        {
-                            player1Scoretie++;
-                            document.getElementById("playeroneTie").innerHTML = player1Scoretie;
-                        }
-                if (turns = 1, isWin())
-                        {
-                            player2Scorewin++;
-                            document.getElementById("playertwoWin").innerHTML = player2Scorewin;
-                        }
-                        else
-                        {
-                            player2Scoretie++;
-                            document.getElementById("playertwoWin").innerHTML = player2Scoretie;
-                        }
-            }
-            countScore();
+            // function countScore()
+            // {
+            //      // win and tie variables
+            //      var player1Scorewin = 0;
+            //      var player2Scorewin = 0;
+            //      var player1Scoretie = 0;
+            //      var player2Scoretie = 0;
+            //     if (turns == 0, isWin())
+            //             {
+            //                 player1Scorewin++;
+            //                 document.getElementById("playeroneWin").innerHTML = player1Scorewin;
+            //             }
+            //             else 
+            //             {
+            //                 player1Scoretie++;
+            //                 document.getElementById("playeroneTie").innerHTML = player1Scoretie;
+            //             }
+            //     if (turns = 1, isWin())
+            //             {
+            //                 player2Scorewin++;
+            //                 document.getElementById("playertwoWin").innerHTML = player2Scorewin;
+            //             }
+            //             else
+            //             {
+            //                 player2Scoretie++;
+            //                 document.getElementById("playertwoWin").innerHTML = player2Scoretie;
+            //             }
+            // }
+            // countScore();
             
             // win code
             function isWin()
